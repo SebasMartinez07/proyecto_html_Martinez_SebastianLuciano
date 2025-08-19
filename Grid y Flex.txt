@@ -1,0 +1,136 @@
+GRID para ordenar la secciones de la pagina display: grid
+FLEXBOX para ubicar el contenido en cada sección de la pagina display: flex
+
+header h1{
+flex: 1;
+text-align: center;
+}
+/* Layout general usando Flexbox */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+/* Header con logo y título alineados */
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: #ffffff;
+  color: #000000;
+}
+
+header img {
+  height: 60px;
+  margin-right: 1rem;
+}
+
+/* Navegación principal con Flexbox */
+nav {
+  background: #333;
+  padding: 0.5rem 0;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: #444;
+}
+
+/* Contenedor de productos usando Grid */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product-container article {
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-container img {
+  width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.product-card {
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.product-card:hover {
+  color: #0078d7;
+}
+
+/* Footer con Flexbox */
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  min-width: 180px;
+  flex: 1 1 180px;
+}
+
+.footer-section h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.footer-section a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.3rem;
+  transition: color 0.2s;
+}
+
+.footer-section a:hover {
+  color: #0078d7;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+}
