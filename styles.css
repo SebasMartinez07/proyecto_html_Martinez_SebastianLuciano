@@ -24,17 +24,10 @@ header h1{
 }
 .menu-principal{
     border: 1px solid #323131;
-    padding: 20px;
+    margin: 0;
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
     margin-top: 0;
-}
-
-.menu-categorias{
-    border: 1px solid #323131;
-    display: flex;
-    flex-flow: column;
-    padding: 70px;
-    list-style: none;
 }
