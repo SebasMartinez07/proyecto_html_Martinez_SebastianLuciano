@@ -92,9 +92,9 @@ body.container {
 .product-item {
     border: 1px solid black;
     background-color: #866363;
-    display: flex;
     width: 150px;
     height: 150px;
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 20px;
